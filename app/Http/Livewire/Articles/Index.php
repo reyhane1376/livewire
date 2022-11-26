@@ -8,6 +8,9 @@ class Index extends Component
 {
     public function render()
     {
-        return view('livewire.articles.index');
+        $article = [
+            'title' => 'title one'
+        ];
+        return view('livewire.articles.index', compact('article'));
     }
 }
