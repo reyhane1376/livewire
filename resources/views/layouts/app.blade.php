@@ -1,4 +1,4 @@
-<html>
+{{-- <html>
 
 <head>
     <livewire:styles />
@@ -8,8 +8,8 @@
     <h3>Livewire Website</h3>
     {{-- @livewire('header') --}}
     {{-- <livewire:header :article="$article"> --}}
-        {{-- {{ $slot }} --}}
+        {{ $slot }}
         <livewire:scripts />
 </body>
 
-</html>
+</html> --}}
