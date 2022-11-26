@@ -6,7 +6,9 @@
 
 <body>
     <h3>Livewire Website</h3>
-    <livewire:scripts />
+    {{-- @livewire('header') --}}
+    <livewire:header>
+        <livewire:scripts />
 </body>
 
 </html>
