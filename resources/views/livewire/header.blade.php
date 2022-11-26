@@ -1,6 +1,7 @@
 <div>
+    <h4>{{ $article }}</h4>
     <ul>
-        {{ dd($article) }}
+
         <li>HOME PAGE</li>
         <li>ABOUT PAGE</li>
     </ul>

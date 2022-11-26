@@ -1,4 +1,4 @@
-{{-- <html>
+<html>
 
 <head>
     <livewire:styles />
@@ -12,4 +12,4 @@
         <livewire:scripts />
 </body>
 
-</html> --}}
+</html>
