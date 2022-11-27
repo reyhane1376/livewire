@@ -9,18 +9,27 @@
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="inputEmail3" wire:model.defer="name"
                                 value="{{ $name }}">
+                            @error('name')
+                            {{ $message }}
+                            @enderror
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="inputEmail3" class="col-sm-2 col-form-label mb-3">Email</label>
                         <div class="col-sm-10">
                             <input type="email" class="form-control" id="inputEmail3" value="{{ $email }}">
+                            @error('email')
+                            {{ $message }}
+                            @enderror
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="inputPassword3" class="col-sm-2 col-form-label mb-3">Password</label>
                         <div class="col-sm-10">
                             <input type="password" class="form-control" id="inputPassword3" value="{{ $password }}">
+                            @error('password')
+                            {{ $message }}
+                            @enderror
                         </div>
                     </div>
                     <div class="form-group row">
