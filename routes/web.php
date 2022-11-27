@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Livewire\Articles\Index;
+use App\Http\Livewire\Auth\Register;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,11 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $article = [
-        'title' => 'this is article 1',
-        'body' => 'articles body'
-    ];
-    return view('master', compact('article'));
+    return view('welcome');
 });
 
-Route::get('/articles/{article}', Index::class);
+Route::get('/auth/register', Register::class);
