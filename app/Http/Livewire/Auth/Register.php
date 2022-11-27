@@ -30,4 +30,9 @@ class Register extends Component
     {
         dd($value);
     }
+
+    public function updated($name)
+    {
+        $this->validateOnly($name);
+    }
 }
