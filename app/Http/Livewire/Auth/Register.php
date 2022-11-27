@@ -18,4 +18,9 @@ class Register extends Component
     {
         dd($this->name);
     }
+
+    public function changeValue($value)
+    {
+        dd($value);
+    }
 }
