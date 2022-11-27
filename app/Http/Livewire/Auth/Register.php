@@ -6,15 +6,16 @@ use Livewire\Component;
 
 class Register extends Component
 {
+    public $name;
+    public $email;
+    public $password;
     public function render()
     {
-        return view('livewire.auth.register', [
-            'title' => 'ali'
-        ]);
+        return view('livewire.auth.register');
     }
 
     public function register()
     {
-        dd('hi');
+        dd($this->name);
     }
 }
