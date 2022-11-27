@@ -10,11 +10,11 @@ class Register extends Component
     public $email;
     public $password;
 
-    protected $rules = [
-        'name' => 'required|min:6',
-        'email' => 'required|email|unique:users',
-        'password' => 'required|min:6'
-    ];
+    // protected $rules = [
+    //     'name' => 'required|min:6',
+    //     'email' => 'required|email|unique:users',
+    //     'password' => 'required|min:6'
+    // ];
     public function render()
     {
         return view('livewire.auth.register');
@@ -22,8 +22,12 @@ class Register extends Component
 
     public function register()
     {
-        $this->validate();
-        dd($this->name);
+        $this->validate([
+            'name' => 'required|min:6',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:6'
+        ]);
+        // dd($this->name);
     }
 
     public function changeValue($value)
@@ -33,6 +37,10 @@ class Register extends Component
 
     public function updated($name)
     {
-        $this->validateOnly($name);
+        $this->validateOnly($name, [
+            'name' => 'required|min:6',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:6'
+        ]);
     }
 }
