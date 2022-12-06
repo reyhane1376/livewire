@@ -7,30 +7,34 @@
                     <div class="form-group row">
                         <label for="inputEmail3" class="col-sm-2 col-form-label mb-3">Name</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputEmail3" wire:model.lazy="name"
-                                value="{{ $name }}">
+                            <input type="text" class="form-control" id="inputEmail3" wire:model="user.name">
                             @error('name')
-                            {{ $message }}
+                            <p class="text-danger">
+                                {{ $message }}
+                            </p>
+
                             @enderror
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="inputEmail3" class="col-sm-2 col-form-label mb-3">Email</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" wire:model.lazy="email"
-                                value="{{ $email }}">
+                            <input type="user.email" class="form-control" id="inputEmail3" wire:model="user.email">
                             @error('email')
-                            {{ $message }}
+                            <p class="text-danger">
+                                {{ $message }}
+                            </p>
                             @enderror
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="inputPassword3" class="col-sm-2 col-form-label mb-3">Password</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" wire:model.lazy="password"
-                                value="{{ $password }}">
+                            <input type="password" class="form-control" id="inputPassword3" wire:model="user.password">
                             @error('password')
-                            {{ $message }}
+                            <p class="text-danger">
+                                {{ $message }}
+                            </p>
                             @enderror
                         </div>
                     </div>
