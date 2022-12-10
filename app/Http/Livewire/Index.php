@@ -13,9 +13,14 @@ class Index extends Component
         return view('livewire.index', compact('articles'));
     }
 
-    public function likeArticle($id)
-    {
-        $article = Article::find($id);
-        $article->increment('like');
-    }
+//     public function like()
+//     {
+//         dd('hi');
+//     }
+
+    // public function likeArticle($id)
+    // {
+    //     $article = Article::find($id);
+    //     $article->increment('like');
+    // }
 }
