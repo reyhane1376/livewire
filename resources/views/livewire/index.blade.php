@@ -2,9 +2,14 @@
     <div class="row">
         <div class="col-12">
             <h3>Articles List</h3>
-            @foreach($articles as $article)
+            a: {{ $foo }}
+            <br>
+            b: {{ $this->bar }}
+            <br>
+            <button class="btn btn-sm btn-warning" wire:click='increment'>increment</button>
+            {{-- @foreach($articles as $article)
             <livewire:article-box :article="$article">
-                @endforeach
+                @endforeach --}}
         </div>
     </div>
 </div>
