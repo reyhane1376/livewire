@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Auth;
 
 use App\Models\User;
 use GuzzleHttp\Psr7\Request;
+use Illuminate\Support\Facades\Log;
 use Livewire\Component;
 
 class Register extends Component
@@ -23,9 +24,11 @@ class Register extends Component
     public function mount()
     {
         $this->user = new user();
+        Log::emergency("mount");
     }
     public function render()
     {
+        log::emergency('render');
         return view('livewire.auth.register');
     }
 
@@ -40,6 +43,16 @@ class Register extends Component
         // dd($this->name);
     }
 
+    public function hydrate()
+    {
+        log::emergency('hydrate');
+    }
+
+    public function dehydrate()
+    {
+        log::emergency('dehydrate');
+    }
+
     // public function changeValue($value)
     // {
     //     dd($value);
@@ -47,6 +60,7 @@ class Register extends Component
 
     public function updated($email)
     {
+        log::emergency('updated');
         $this->validateOnly($email);
     }
 }
