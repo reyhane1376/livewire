@@ -47,4 +47,16 @@
             </div>
         </div>
     </div>
+    <script>
+        // document.addEventListener("DOMContentLoaded", () => {
+        //     Livewire.hook('component.initialized', (fromEl, toEl, component) => {
+        //         console.log('hi');
+        //     })
+        // })
+        document.addEventListener('livewire:load', function () {
+            Livewire.hook('element.updating', (fromEl, toEl, component) => {
+                console.log('ali');
+            });
+        })
+    </script>
 </div>
