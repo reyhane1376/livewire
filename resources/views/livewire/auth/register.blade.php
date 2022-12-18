@@ -8,7 +8,7 @@
                         <label for="inputEmail3" class="col-sm-2 col-form-label mb-3">Name</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="inputEmail3" wire:model="user.name">
-                            @error('name')
+                            @error('user.name')
                             <p class="text-danger">
                                 {{ $message }}
                             </p>
@@ -20,7 +20,7 @@
                         <label for="inputEmail3" class="col-sm-2 col-form-label mb-3">Email</label>
                         <div class="col-sm-10">
                             <input type="user.email" class="form-control" id="inputEmail3" wire:model="user.email">
-                            @error('email')
+                            @error('user.email')
                             <p class="text-danger">
                                 {{ $message }}
                             </p>
@@ -31,7 +31,7 @@
                         <label for="inputPassword3" class="col-sm-2 col-form-label mb-3">Password</label>
                         <div class="col-sm-10">
                             <input type="password" class="form-control" id="inputPassword3" wire:model="user.password">
-                            @error('password')
+                            @error('user.password')
                             <p class="text-danger">
                                 {{ $message }}
                             </p>

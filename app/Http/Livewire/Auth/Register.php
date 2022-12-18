@@ -33,7 +33,8 @@ class Register extends Component
     {
         $this->validate();
         $this->user->password = bcrypt($this->user->password);
-        dd($this->user->save());
+        return redirect()->route('home');
+        // dd($this->user->save());
         // dd($this->user);
         // $this->user->save();
         // dd($this->name);

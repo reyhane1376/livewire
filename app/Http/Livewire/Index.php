@@ -32,10 +32,6 @@ class Index extends Component
         return $this->foo + 1;
     }
 
-    //     public function like()
-    //     {
-    //         dd('hi');
-    //     }
 
     // public function likeArticle($id)
     // {
